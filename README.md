@@ -3,6 +3,7 @@
 - 팀명 : TEAM3 (남탕, )
 - 팀원 : 이문형😎, 이종섭😁, 안준용😍, 안동현😒, 김태용😘 
 - 기간 : 2021.04.05 ~ 2021.05.24 17:59
+- 순위 : 등(%)
 - 링크 : [https://www.dacon.io/competitions/official/235713/overview/description](https://www.dacon.io/competitions/official/235713/overview/description)
 
 ## 1. (참고)캐글 경진대회 spooky author identification
