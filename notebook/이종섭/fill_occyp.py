@@ -1,4 +1,4 @@
-import preprocessing
+from preprocessing import *
 from sklearn.ensemble import RandomForestClassifier
 from sklearn.model_selection import cross_val_score
 
@@ -40,10 +40,11 @@ def fill_occyp(train, test, input):
   
   return result
 
-drive_path = '/Users/jongseob/Documents/GitHub/dacon-competition-credit_score_prediction/data/'
-raw_train = pd.read_csv(drive_path+'train.csv', index_col='index')
-raw_test = pd.read_csv(drive_path+'test.csv', index_col='index')
-raw_train.dropna(inplace=True, axis=0)
-raw_test.dropna(inplace=True, axis=0)
+# drive_path = '/Users/jongseob/Documents/GitHub/dacon-competition-credit_score_prediction/data/'
+# raw_train = pd.read_csv(drive_path+'train.csv', index_col='index')
+# raw_test = pd.read_csv(drive_path+'test.csv', index_col='index')
+# raw_train.fillna('None', inplace=True, axis=0)
+# raw_test.fillna('None', inplace=True, axis=0)
 
-fill_occyp(raw_train, raw_test, raw_train)
+# result = fill_occyp(raw_train, raw_test, raw_train)
+# print(result.head(3))

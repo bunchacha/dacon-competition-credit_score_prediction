@@ -16,13 +16,14 @@ def pre_prcs(train, input, category_features, numeric_features):
 
   return pd.concat( [numeric, category], axis=1 )
 
-drive_path = '/Users/jongseob/Documents/GitHub/dacon-competition-credit_score_prediction/data/'
-raw_train = pd.read_csv(drive_path+'train.csv', index_col='index')
-raw_train.dropna(inplace=True, axis=0)
-categoty = ['gender', 'car', 'reality', 'income_type','edu_type', 'family_type', 
-            'house_type', 'FLAG_MOBIL', 'work_phone', 'phone', 'email', 'occyp_type',
-            'family_size', 'child_num']
-numeric = ['income_total', 'DAYS_BIRTH', 'DAYS_EMPLOYED', 'begin_month']
+# drive_path = '/Users/jongseob/Documents/GitHub/dacon-competition-credit_score_prediction/data/'
+# raw_train = pd.read_csv(drive_path+'train.csv', index_col='index')
+# raw_train.dropna(inplace=True, axis=0)
 
-result = pre_prcs(raw_train.iloc[:, :-1], raw_train.iloc[:, :-1], categoty, numeric)
-print(result.head(3))
+# categoty = ['gender', 'car', 'reality', 'income_type','edu_type', 'family_type', 
+#             'house_type', 'FLAG_MOBIL', 'work_phone', 'phone', 'email', 'occyp_type',
+#             'family_size', 'child_num']
+# numeric = ['income_total', 'DAYS_BIRTH', 'DAYS_EMPLOYED', 'begin_month']
+# result = pre_prcs(raw_train.iloc[:, :-1], raw_train.iloc[:, :-1], categoty, numeric)
+
+# print(result.head(3))
