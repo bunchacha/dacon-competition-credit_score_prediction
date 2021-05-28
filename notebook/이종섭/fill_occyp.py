@@ -1,6 +1,8 @@
 from preprocessing import pre_prcs
 from sklearn.ensemble import RandomForestClassifier
 from sklearn.model_selection import cross_val_score
+import pandas as pd
+import numpy as np
 
 def fill_occyp(train, test, input):
   # Features (absolute value of correlation with occyp > 0.05)
