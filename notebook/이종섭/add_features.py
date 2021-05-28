@@ -27,23 +27,27 @@ def add_features(train_df, test):
   ids = create_id(data)
   
   for id in ids.unique():
+    # Sort Same_ID_Indices According to 'begin_month' & 'credit' 
     sorted_idx = data.loc[ids[ids == id].index, ['begin_month', 'credit']].sort_values(['begin_month', 'credit']).index.tolist()
     
     for i, idx in enumerate(sorted_idx):
+      # For First Issue Info for Each Customer
       if i == 0:
         sid = data.loc[idx, 'gender'] + str(idx).zfill(5)
         cards[idx] = 1
         pre_card = 1
         pre_month = data.loc[idx, 'begin_month']
+        # Has Credit Info?
         if idx in train_idx:
           pre_credit = data.loc[idx, 'credit']
+        # No Credit Info?
         else:
           pre_credit = 1
+      # For Re-issue Info
       else:
         reissue[idx] = 1
         period[idx] = data.loc[idx, 'begin_month'] - pre_month
         pre_month = data.loc[idx, 'begin_month']
-
         pcredit[idx] = pre_credit
         if idx in train_idx:
           pre_card += 1

@@ -1,4 +1,4 @@
-from preprocessing import *
+from preprocessing import pre_prcs
 from sklearn.ensemble import RandomForestClassifier
 from sklearn.model_selection import cross_val_score
 
