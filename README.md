@@ -35,3 +35,11 @@
 (3) 성능 : 
 
 메모 : 
+
+
+## 4. 피드백
+### 우수모델:https://dacon.io/competitions/official/235713/codeshare/2768?page=1&dtype=recent
+
+(1) ID변수 활용
+(2) 더 좋은 모델을 찾아서 활용 하면 좋은 결과를 가져갈 수 있었을 것으로 사료(CatBoost)
+(3) 모델링에 따른 적절한 하리퍼파라미터 선정
