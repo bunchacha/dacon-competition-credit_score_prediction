@@ -37,6 +37,8 @@
 (4) train/test 및 신용도(Label)에 대한 분포 비교
 ```
 - begin_month 등 에서의 분포 차이를 발견함
+- 최초 발급 및 발급 초기에는 신용도를 좋게 평가받는 경향이 존재함
+- DAYS_BIRTH, DAYS_EMPLOYED, income_total은 신용도와 양의 상관관계를 보임
 - adversarial validation을 수행한 결과, AUC 값이 0.5에 가깝게 나옴
 ```
 ### 피쳐 엔지니어링
@@ -60,8 +62,7 @@
 ```
 - 변수 제거 : FLAG_MOBIL, phone, email, cnt_card 등 분석에 영향이 거의 없는 변수를 제거함
 - 결측치 처리 : occyp_type 결측치에 None 대입
-- 이상치 처리 (범주 치환 및 제거) 
-# child_num, family_size는 수치형 변수지만, 비선형적인 특징을 고려하여 범주형 변수처럼 치환과 제거를 진행함
+- 이상치 처리 (범주 치환 및 제거) # child_num, family_size는 수치형 변수지만, 비선형적인 특징을 고려하여 범주형 변수처럼 치환과 제거를 진행함
 : child_num>5 인 행 제거 후, child_num>=2 인 행을 child_num==2 로 치환함
   family_size<7 인 행 제거 후, family_size>=4 인 행을 family_size==4 로 치환함
   DAYS_EMPLOYED>0 인 행(noise)을 DAY_SEMPLOYED==0 으로 치환함
@@ -76,6 +77,23 @@
   DAYS_EMPLOYED -> EMP_GROUP (4그룹) 경력기간
   begin_month -> month_group (2그룹) 카드 발급 경과 기간
  - 범주형 변수 인코딩 : 원핫 인코딩, 라벨 인코딩, catboost 인코딩(data leakage 아닐 시),
- Ordinal 인코딩 : car, reality, edu_type (높은 점수를 부여함)
-  
+  Ordinal 인코딩 : car, reality, edu_type, house_type (도메인 지식을 바탕으로 높은 점수를 부여함)
+ - 스케일링 : 딥러닝 모델에서 z-score 정규화(StandardScaler())를 진행함
+```
+
+## 3. 시사점 및 개선 방향
+### 시사점
+```
+- 정형 데이터 셋(Tabuler) 위주의 머신러닝 문제는 특성 공학이 핵심임
+- 본 경진대회의 경우 도메인 지식이 특히 중요했음
+- 불완전한 데이터 처리 방법에 대해 학습을 진행함 (불균형, 중복, 결측치, 이상치 데이터)
+- Data leakage를 조심해야 함 (데이콘 경진대회의 경우, 조건이 까다로움)
+```
+### 개선 방향
+```
+- Stacking 앙상블 알고리즘의 적용
+- 더 많은 파생 변수와 catboost 알고리즘의 적용
+- TabNet 모델 같은 경우, 튜닝이 더 필요함
+- 우수 사례 : https://www.dacon.io/competitions/official/235713/codeshare/2746?page=1&dtype=recent
+- 후처리(post-processing) 작업의 적용
 ```
