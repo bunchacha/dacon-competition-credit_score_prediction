@@ -44,7 +44,8 @@
 - DAYS_BIRTH, DAYS_EMPLOYED, income_total은 신용도와 양의 상관관계를 보임
 - adversarial validation을 수행한 결과, AUC 값이 0.5에 가깝게 나옴
 ```
-#### 탐색적 분석, 피쳐 엔지니어링, 모델링 부분에 대해서는, notebook 폴더에 개별적으로 정리했습니다.
+#### 탐색적 분석, 피쳐 엔지니어링, 모델링 부분에 대해서는
+#### notebook 폴더에 개별적으로 정리했습니다.
 
 
 ## 3. 시사점 및 개선 방향
@@ -68,14 +69,20 @@
 ```
 
 
-## 4. (참고)캐글 경진대회 spooky author identification
+## 4. (참고) 우수사례
+[https://www.dacon.io/competitions/official/235713/codeshare/2746?page=1&dtype=recent](https://www.dacon.io/competitions/official/235713/codeshare/2746?page=1&dtype=recent)
+
+
+## (참고)캐글 경진대회 spooky author identification
 [https://www.kaggle.com/c/spooky-author-identification](https://www.kaggle.com/c/spooky-author-identification)
 
 참고한 코드 : 
 
+
 ## (참고) 신용카드 사용자 연체 예측 AI 경진대회
 
 참고한 코드 : 
+
 
 ## (참고)논문 spooky author identification
 [https://www.kaggle.com/c/spooky-author-identification](https://www.kaggle.com/c/spooky-author-identification)
