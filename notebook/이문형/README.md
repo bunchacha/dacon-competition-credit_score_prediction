@@ -1,4 +1,4 @@
-## 목차 1. 제출 모델 2. 실험 기록 3. 시사점 및 개선 방향
+## <목차> [1. 제출 모델   2. 실험 기록   3. 시사점 및 개선 방향]
 
 ## 1. 제출 모델 (코드명: [final_code_0523.ipynb](https://github.com/bunchacha/dacon-competition-credit_score_prediction/blob/main/notebook/%EC%9D%B4%EB%AC%B8%ED%98%95/final_code_0523.ipynb))
 ```
