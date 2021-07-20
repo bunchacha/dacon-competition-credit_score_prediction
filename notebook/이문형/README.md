@@ -97,6 +97,6 @@
 - Stacking 앙상블 알고리즘의 적용
 - 더 많은 파생 변수와 catboost 알고리즘의 적용
 - TabNet 모델 같은 경우, 튜닝이 더 필요함
-- 우수 사례 : [https://www.dacon.io/competitions/official/235713/codeshare/2746?page=1&dtype=recent](https://www.dacon.io/competitions/official/235713/codeshare/2746?page=1&dtype=recent)
+- 우수 사례 : https://www.dacon.io/competitions/official/235713/codeshare/2746?page=1&dtype=recent
 - 후처리(post-processing) 작업의 적용
 ```
