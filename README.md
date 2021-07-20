@@ -17,6 +17,7 @@
 - 
 - 
 
+
 ## 2. 실험 기록
 ### 주요 이슈사항
 (1) 중복 데이터 처리 문제
@@ -29,7 +30,7 @@
 ```
 - begin_month와 신용도(Label)을 제외한, 모든 피쳐가 동일한 경우를 같은 고객으로 처리함
 - 추가로, income_total, family_size, occyp_type 등에서도 변화한 경우 몇 개의 컬럼을 확인함
-- 이에 대한 파생변수 생성
+- 같은 고객 처리 문제를 해결하고, 고객의 과거 이력을 구분하기 위한 파생변수들을 추가함
 ```
 (3) 불균형 데이터 처리 문제
 ```
@@ -44,6 +45,7 @@
 - adversarial validation을 수행한 결과, AUC 값이 0.5에 가깝게 나옴
 ```
 ### 탐색적분석, 피쳐 엔지니어링, 모델링 부분에 대해서는 notebook 폴더에 개별적으로 정리했습니다.
+
 
 ## 3. 시사점 및 개선 방향
 ### 시사점
@@ -64,6 +66,7 @@
 - 우수 사례 : https://www.dacon.io/competitions/official/235713/codeshare/2746?page=1&dtype=recent
 - 후처리(post-processing) 작업의 적용
 ```
+
 
 ## 4. (참고)캐글 경진대회 spooky author identification
 [https://www.kaggle.com/c/spooky-author-identification](https://www.kaggle.com/c/spooky-author-identification)
