@@ -10,7 +10,7 @@
  5. 데이터 전처리 함수 (preprocess)
  6. 모델링 (제출모델 : Customized LGBM(Optuna 튜닝 후))
     TabNet
-    **Optuna
+    Optuna
     Customized (LightGBM)
     Stratified K-fold ensemble
  7. 제출 파일 생성
@@ -50,9 +50,32 @@
 - reissue : 재발급 여부 (0: 신규 발급, 1: 재발급)
 - cnt_card : 누적 카드 발급 수
 - before_credit : 직전 신용도
+- tb_divide_cnt : total_begin_month / cnt_card
 
 # 기타 고려 가능한 파생변수
-- 수입 등 연속형 변수의 최소값/최대값/평균값/증감비 등의 집계 데이터
+- income_total 등 연속형 변수의 최소값/최대값/평균값/증감비 등의 집계 데이터
 ```
 
 (2) 피쳐별 전처리
+```
+- 변수 제거 : FLAG_MOBIL, phone, email, cnt_card 등 분석에 영향이 거의 없는 변수를 제거함
+- 결측치 처리 : occyp_type 결측치에 None 대입
+- 이상치 처리 (범주 치환 및 제거) 
+# child_num, family_size는 수치형 변수지만, 비선형적인 특징을 고려하여 범주형 변수처럼 치환과 제거를 진행함
+: child_num>5 인 행 제거 후, child_num>=2 인 행을 child_num==2 로 치환함
+  family_size<7 인 행 제거 후, family_size>=4 인 행을 family_size==4 로 치환함
+  DAYS_EMPLOYED>0 인 행(noise)을 DAY_SEMPLOYED==0 으로 치환함
+- 이상치 처리 (수치형 변수)
+: Z-Score를 이용해 이상치를 제거함
+- 범주형 변수 결합(축소)
+: EMPLOYED==0이고, occyp_type=='None'인 경우, occyp_type=='unemployment'로 치환함
+  house_type, family_type, begin_month 을 도메인 지식을 바탕으로 범주를 축소함
+- 일 단위를 연 단위로 변환 : DAYS_BIRTH, DAYS_EMPLOYED
+- 비닝 (수치형 변수 구간화)
+: DAYS_BIRTH -> AGE_GROUP (6그룹) 연령대
+  DAYS_EMPLOYED -> EMP_GROUP (4그룹) 경력기간
+  begin_month -> month_group (2그룹) 카드 발급 경과 기간
+ - 범주형 변수 인코딩 : 원핫 인코딩, 라벨 인코딩, catboost 인코딩(data leakage 아닐 시),
+ Ordinal 인코딩 : car, reality, edu_type (높은 점수를 부여함)
+  
+```
