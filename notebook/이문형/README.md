@@ -1,6 +1,6 @@
 ## 1. 제출 모델 (코드명: [final_code_0523.ipynb](https://github.com/bunchacha/dacon-competition-credit_score_prediction/blob/main/notebook/%EC%9D%B4%EB%AC%B8%ED%98%95/final_code_0523.ipynb))
 ```
- 1. 데이터 불러오기(__Colab__)
+ 1. 데이터 불러오기(Colab)
  2. 라이브러리 설명
  3. 데이터 탐색
     Data feature description
