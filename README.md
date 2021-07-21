@@ -80,8 +80,6 @@
 
 참고한 코드 : [https://www.kaggle.com/rikdifos/credit-card-approval-prediction-using-ml](https://www.kaggle.com/rikdifos/credit-card-approval-prediction-using-ml)
 
-#### - 논문 KENNEDY, Kenneth. Credit scoring using machine learning. 2013.
-[Credit scoring using machine learning](https://www.researchgate.net/publication/336240486_Credit_scoring_using_machine_learning_algorithims)
+#### - 논문 : [KENNEDY, Kenneth. Credit scoring using machine learning. 2013.](https://www.researchgate.net/publication/336240486_Credit_scoring_using_machine_learning_algorithims)
 
-#### - 블로그 자료 
-[1. 스코어카드 설계하기(로지스틱 회귀분석) - 이론편](https://m.blog.naver.com/jhkang8420/221541323875)
+#### - 블로그 자료 : [1. 스코어카드 설계하기(로지스틱 회귀분석) - 이론편](https://m.blog.naver.com/jhkang8420/221541323875)
