@@ -83,7 +83,7 @@
 참고한 코드 : 
 
 
-## (참고)논문 spooky author identification
-[https://www.kaggle.com/c/spooky-author-identification](https://www.kaggle.com/c/spooky-author-identification)
+## (참고)논문 KENNEDY, Kenneth. Credit scoring using machine learning. 2013.
+[Credit scoring using machine learning](https://www.researchgate.net/publication/336240486_Credit_scoring_using_machine_learning_algorithims)
 
 참고한 코드 : 
