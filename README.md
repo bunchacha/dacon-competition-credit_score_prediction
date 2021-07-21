@@ -72,10 +72,10 @@
 [https://www.dacon.io/competitions/official/235713/codeshare/2746?page=1&dtype=recent](https://www.dacon.io/competitions/official/235713/codeshare/2746?page=1&dtype=recent)
 
 
-## (참고)캐글 경진대회 spooky author identification
-[https://www.kaggle.com/c/spooky-author-identification](https://www.kaggle.com/c/spooky-author-identification)
+## (참고)캐글 경진대회 Credit Card Approval Prediction
+[https://www.kaggle.com/rikdifos/credit-card-approval-prediction](https://www.kaggle.com/rikdifos/credit-card-approval-prediction)
 
-참고한 코드 : 
+참고한 코드 : [https://www.kaggle.com/rikdifos/credit-card-approval-prediction-using-ml](https://www.kaggle.com/rikdifos/credit-card-approval-prediction-using-ml)
 
 
 ## (참고) 신용카드 사용자 연체 예측 AI 경진대회
