@@ -71,7 +71,7 @@
 ## 4. (Reference)
 
 #### - 우수사례
-[[Private 5위 0.66016] | Team SsulleBal | Catboost]](https://www.dacon.io/competitions/official/235713/codeshare/2746?page=1&dtype=recent)
+[[Private 5위 0.66016] | Team SsulleBal | Catboost](https://www.dacon.io/competitions/official/235713/codeshare/2746?page=1&dtype=recent)
 
 
 #### - 캐글 경진대회 [Credit Card Approval Prediction](https://www.kaggle.com/rikdifos/credit-card-approval-prediction)
