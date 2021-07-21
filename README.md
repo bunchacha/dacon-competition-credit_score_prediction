@@ -10,7 +10,7 @@
 
 
 ## 1. 제출 모델
-**notebook 폴더에 개별적으로 정리했습니다.**
+**[notebook 폴더](https://github.com/bunchacha/dacon-competition-credit_score_prediction/tree/main/notebook)에 개별적으로 정리했습니다.**
 - [안동현](https://github.com/bunchacha/dacon-competition-credit_score_prediction/tree/main/notebook/%EC%95%88%EB%8F%99%ED%98%84) (코드명 : [EDA _ 1st_Feature_Engineering.ipynb](https://github.com/bunchacha/dacon-competition-credit_score_prediction/blob/main/notebook/%EC%95%88%EB%8F%99%ED%98%84/EDA%20_%201st_Feature_Engineering.ipynb), [Final_Feature_Engineering_Modeling](https://github.com/bunchacha/dacon-competition-credit_score_prediction/blob/main/notebook/%EC%95%88%EB%8F%99%ED%98%84/Final_Feature_Engineering_Modeling.ipynb))
 - [이문형](https://github.com/bunchacha/dacon-competition-credit_score_prediction/tree/main/notebook/%EC%9D%B4%EB%AC%B8%ED%98%95) (코드명 : [final_code_0523.ipynb](https://github.com/bunchacha/dacon-competition-credit_score_prediction/blob/main/notebook/%EC%9D%B4%EB%AC%B8%ED%98%95/final_code_0523.ipynb))
 - [이종섭](https://github.com/bunchacha/dacon-competition-credit_score_prediction/tree/main/notebook/%EC%9D%B4%EC%A2%85%EC%84%AD) (코드명 : )
@@ -44,7 +44,7 @@
 - DAYS_BIRTH, DAYS_EMPLOYED, income_total은 신용도와 양의 상관관계를 보임
 - adversarial validation을 수행한 결과, AUC 값이 0.5에 가깝게 나옴
 ```
-#### 탐색적 분석, 피쳐 엔지니어링, 모델링 부분에 대해서는 notebook 폴더에 개별적으로 정리했습니다.
+#### 탐색적 분석, 피쳐 엔지니어링, 모델링 부분에 대해서는 [notebook 폴더](https://github.com/bunchacha/dacon-competition-credit_score_prediction/tree/main/notebook)에 개별적으로 정리했습니다.
 
 
 ## 3. 시사점 및 개선 방향
