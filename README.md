@@ -4,7 +4,9 @@
 - 팀원 : 이문형😎, 이종섭😁, 안준용😍, 안동현😒, 김태용😘 
 - 기간 : 2021.04.05 ~ 2021.05.24 17:59
 - 순위 : 
+
   Public score 기준 - Logloss score 0.72151 갱신, 343위/1428팀 (+ 상위 24% 달성)
+  
   Private score 기준 - Logloss score 0.68963 갱신, 250위/1428팀 (+ 상위 17% 달성)
 - 링크 : [https://www.dacon.io/competitions/official/235713/overview/description](https://www.dacon.io/competitions/official/235713/overview/description)
 
