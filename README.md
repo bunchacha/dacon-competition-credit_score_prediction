@@ -71,20 +71,17 @@
 ## 4. (Reference)
 
 #### - 우수사례
-[https://www.dacon.io/competitions/official/235713/codeshare/2746?page=1&dtype=recent](https://www.dacon.io/competitions/official/235713/codeshare/2746?page=1&dtype=recent)
+[[Private 5위 0.66016] | Team SsulleBal | Catboost]](https://www.dacon.io/competitions/official/235713/codeshare/2746?page=1&dtype=recent)
 
 
-#### - 캐글 경진대회 Credit Card Approval Prediction
-[Credit Card Approval Prediction](https://www.kaggle.com/rikdifos/credit-card-approval-prediction)
+#### - 캐글 경진대회 [Credit Card Approval Prediction](https://www.kaggle.com/rikdifos/credit-card-approval-prediction)
 
 참고한 코드 : [https://www.kaggle.com/rikdifos/credit-card-approval-prediction-using-ml](https://www.kaggle.com/rikdifos/credit-card-approval-prediction-using-ml)
 
 
 #### - 신용카드 사용자 연체 예측 AI 경진대회
 
-참고한 코드 : [입문자의 투박한 EDA](https://dacon.io/competitions/official/235713/codeshare/2494?page=4&dtype=recent)
-
-[EDA for starters](https://dacon.io/competitions/official/235713/codeshare/2485?page=4&dtype=recent)
+참고한 코드 : [입문자의 투박한 EDA](https://dacon.io/competitions/official/235713/codeshare/2494?page=4&dtype=recent), [EDA for starters](https://dacon.io/competitions/official/235713/codeshare/2485?page=4&dtype=recent)
 
 
 #### - 논문 KENNEDY, Kenneth. Credit scoring using machine learning. 2013.
